@@ -12,39 +12,12 @@ import {
 export default function Page() {
   return (
     <div className="min-h-screen bg-base-100">
-      {/* ========== DELETE THIS SECTION WHEN READY ========== */}
-      <section className="border-b border-success/20 bg-success/10 py-8">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <div className="mb-3 flex items-center justify-center gap-3">
-            <PingDot />
-            <span className="text-xl font-bold text-success">You're Live!</span>
-          </div>
-          <p className="text-success">
-            Your app is deployed and running. Now make it yours.
-          </p>
-          <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <QuickStep label="1. Open" code="app/routes/index.tsx" />
-            <QuickStep label="2. Delete this section" arrow />
-            <QuickStep label="3. Edit everything below" arrow />
-          </div>
-        </div>
-      </section>
 
       {/* Hero */}
       <section className="relative flex min-h-[90vh] items-center justify-center px-6">
         <div className="text-center">
-          {/* Badge */}
-          <div className="mb-6 badge gap-2 badge-outline border-base-300 px-4 py-3 backdrop-blur-sm">
-            <PingDot className="size-1.5" />
-            Built with Gista.js
-          </div>
-
           <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-            Your AI writes the code.
-            <br />
-            <span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
-              You ship the product.
-            </span>
+            Hi, I'm Alex
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg text-balance text-base-content/70 sm:text-xl">
@@ -244,31 +217,3 @@ function Step({ number, title, description }) {
   )
 }
 
-type QuickStepProps = { label: string; code?: string; arrow?: boolean }
-
-function QuickStep({ label, code, arrow }: QuickStepProps) {
-  return (
-    <>
-      {arrow && <span className="hidden text-base-content/30 sm:block">→</span>}
-      <div className="flex items-center gap-2 rounded-lg bg-base-100 px-3 py-1.5 text-sm text-base-content/70 shadow-sm">
-        {label}
-        {code && (
-          <code className="rounded bg-base-200 px-2 py-0.5 font-mono">
-            {code}
-          </code>
-        )}
-      </div>
-    </>
-  )
-}
-
-function PingDot({ className = '' }: { className?: string }) {
-  return (
-    <div className="inline-grid *:[grid-area:1/1]">
-      <div
-        className={`status animate-ping status-success [animation-duration:1.5s] ${className}`}
-      ></div>
-      <div className={`status status-success ${className}`}></div>
-    </div>
-  )
-}
