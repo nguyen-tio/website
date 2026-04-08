@@ -7,7 +7,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Alex — Freelance Photographer</title>
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <Links />
       </head>

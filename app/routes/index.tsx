@@ -3,6 +3,8 @@ import { Link } from 'react-router'
 export default function Page() {
   return (
     <main>
+      <title>Alex — Freelance Photographer</title>
+      <meta name="description" content="Freelance photographer based in Portland capturing landscapes, portraits, and street moments." />
       <section className="max-w-5xl mx-auto px-6 py-24 sm:py-36 text-center">
         <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">Freelance Photographer</p>
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-6">

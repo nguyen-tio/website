@@ -24,6 +24,8 @@ const projects = [
 export default function Page() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-16 sm:py-24">
+      <title>Projects — Alex, Freelance Photographer</title>
+      <meta name="description" content="Browse Alex's photography projects: landscapes, portraits, and street photography from Portland and beyond." />
       <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-12">Projects</h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map(({ icon: Icon, title, description, image }) => (
