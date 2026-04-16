@@ -1,6 +1,6 @@
 import type { Config } from '@react-router/dev/config'
 
 export default {
-  ssr: false,
-  prerender: true,
+  ssr: true,
+  prerender: ['/', '/about', '/projects'],
 } satisfies Config

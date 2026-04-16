@@ -19,6 +19,18 @@ export default function Page() {
             <Link to="/about" className="btn btn-outline px-8">About Me</Link>
           </div>
         </section>
+
+        <section className="max-w-5xl mx-auto px-6 pb-24 text-center">
+          <div className="bg-base-200 rounded-2xl p-10 sm:p-16">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3">Build a form in seconds</h2>
+            <p className="text-base-content/70 mb-6 max-w-md mx-auto">
+              Create custom forms, share the link, and watch responses roll in.
+            </p>
+            <Link to="/forms/new" className="btn btn-primary px-10">
+              Create a form
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   )
