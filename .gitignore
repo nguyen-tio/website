@@ -8,3 +8,8 @@ data/*
 # React Router
 .react-router/
 build/
+
+# Database
+db.sqlite
+*.db
+*.sqlite
